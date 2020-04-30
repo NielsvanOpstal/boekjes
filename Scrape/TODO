@@ -1,0 +1,4 @@
+- tabel in csv fixen
+- OPTIES VOOR ZOEKEN: TAAL ETC EN INVOER?
+-data["prijs"] = i.find(class_="price").select("strong")[0].text -> schoner
+- check poep veranderen in gewoon de eerste skippen
