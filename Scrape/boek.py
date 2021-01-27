@@ -4,11 +4,13 @@ import pandas as pd
 import openpyxl
 
 
-def scrape(search_term):
-
+def scrape(title, author):
+    print(title, author)
     # dit is de uitgekleede link als je zoekt op orlando virginia woolf
+    # ="https://www.boekwinkeltjes.nl/s/?q=avonden+reve&p="
+    # https://www.boekwinkeltjes.nl/su/?qs=huxley&qt=island
     page = 1
-    myUrlOriginal="https://www.boekwinkeltjes.nl/s/?q=avonden+reve&p="
+    myUrlOriginal="https://www.boekwinkeltjes.nl/su/?qs=" + author + "&qt=" + title + "&p="
     myUrl = myUrlOriginal + str(page)
     df = pd.DataFrame(columns = ["auteur", "titel"]) # create a dataframe
 
